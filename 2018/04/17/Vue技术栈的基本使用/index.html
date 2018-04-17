@@ -79,13 +79,21 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="阿九是只大笨猫">
-<meta property="og:url" content="http://qianguoqing.github.io/index.html">
+<meta name="description" content="vue技术栈的基本使用通过一个Vue案例，了解开发中vue-router、axios、vuex的知识点和应用。 github源码 新建项目 vue init webpack vue-ordering 安装vue-router选项时选择y cd vue-ordering npm run dev  添加几个组件如下：   vue-routerVue使用vue-router做单页应用的路由跳转。 首先在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue技术栈的基本使用">
+<meta property="og:url" content="http://qianguoqing.github.io/2018/04/17/Vue技术栈的基本使用/index.html">
 <meta property="og:site_name" content="阿九是只大笨猫">
+<meta property="og:description" content="vue技术栈的基本使用通过一个Vue案例，了解开发中vue-router、axios、vuex的知识点和应用。 github源码 新建项目 vue init webpack vue-ordering 安装vue-router选项时选择y cd vue-ordering npm run dev  添加几个组件如下：   vue-routerVue使用vue-router做单页应用的路由跳转。 首先在">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://raw.githubusercontent.com/QianGuoqing/markdown-images-repo/master/%E7%BB%84%E4%BB%B6%E7%9B%AE%E5%BD%95.jpeg">
+<meta property="og:image" content="https://raw.githubusercontent.com/QianGuoqing/vue-ordering/master/images/%E6%B2%A1%E6%9C%89vuex%E7%9A%84%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1.jpeg">
+<meta property="og:image" content="https://vuex.vuejs.org/zh-cn/images/vuex.png">
+<meta property="og:updated_time" content="2018-04-17T07:15:55.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="阿九是只大笨猫">
+<meta name="twitter:title" content="Vue技术栈的基本使用">
+<meta name="twitter:description" content="vue技术栈的基本使用通过一个Vue案例，了解开发中vue-router、axios、vuex的知识点和应用。 github源码 新建项目 vue init webpack vue-ordering 安装vue-router选项时选择y cd vue-ordering npm run dev  添加几个组件如下：   vue-routerVue使用vue-router做单页应用的路由跳转。 首先在">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/QianGuoqing/markdown-images-repo/master/%E7%BB%84%E4%BB%B6%E7%9B%AE%E5%BD%95.jpeg">
 
 
 
@@ -115,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://qianguoqing.github.io/"/>
+  <link rel="canonical" href="http://qianguoqing.github.io/2018/04/17/Vue技术栈的基本使用/"/>
 
 
 
 
 
-  <title>阿九是只大笨猫</title>
+  <title>Vue技术栈的基本使用 | 阿九是只大笨猫</title>
   
 
 
@@ -140,8 +148,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -210,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -242,9 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/17/Vue技术栈的基本使用/" itemprop="url">Vue技术栈的基本使用</a></h1>
+          <h1 class="post-title" itemprop="name headline">Vue技术栈的基本使用</h1>
         
 
         <div class="post-meta">
@@ -294,9 +299,7 @@
       
 
       
-        
-          
-            <h2 id="vue技术栈的基本使用"><a href="#vue技术栈的基本使用" class="headerlink" title="vue技术栈的基本使用"></a>vue技术栈的基本使用</h2><p>通过一个Vue案例，了解开发中<code>vue-router</code>、<code>axios</code>、<code>vuex</code>的知识点和应用。</p>
+        <h2 id="vue技术栈的基本使用"><a href="#vue技术栈的基本使用" class="headerlink" title="vue技术栈的基本使用"></a>vue技术栈的基本使用</h2><p>通过一个Vue案例，了解开发中<code>vue-router</code>、<code>axios</code>、<code>vuex</code>的知识点和应用。</p>
 <p><a href="https://github.com/QianGuoqing/vue-ordering" target="_blank" rel="noopener">github源码</a></p>
 <h3 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h3><ul>
 <li><code>vue init webpack vue-ordering</code></li>
@@ -402,8 +405,6 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> getMenuItems = <span class="function"><span class="params">state</span> =&gt;</span> state.menuItems</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> currentUser = <span class="function"><span class="params">state</span> =&gt;</span> state.currentUser</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> isLogin = <span class="function"><span class="params">state</span> =&gt;</span> state.isLogin</span><br></pre></td></tr></table></figure>
 <p>修改后的<code>index.js</code>: </p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"><span class="keyword">import</span> Vuex <span class="keyword">from</span> <span class="string">'vuex'</span></span><br><span class="line"></span><br><span class="line">Vue.use(Vuex)</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> actions <span class="keyword">from</span> <span class="string">'./actions'</span></span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> getters <span class="keyword">from</span> <span class="string">'./getters'</span></span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> mutations <span class="keyword">from</span> <span class="string">'./mutations'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> Vuex.Store(&#123;</span><br><span class="line">  state: &#123;</span><br><span class="line">    menuItems: &#123;&#125;,</span><br><span class="line">    currentUser: <span class="literal">null</span>,</span><br><span class="line">    isLogin: <span class="literal">false</span></span><br><span class="line">  &#125;,</span><br><span class="line">  getters,</span><br><span class="line">  mutations,</span><br><span class="line">  actions</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> store</span><br></pre></td></tr></table></figure>
-          
-        
       
     </div>
     
@@ -420,132 +421,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://qianguoqing.github.io/2018/04/17/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Qian Guoqing">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/blog-logo.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="阿九是只大笨猫">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/17/hello-world/" itemprop="url">个人博客</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-17T13:03:22+08:00">
-                2018-04-17
-              </time>
+              <a href="/2018/04/17/hello-world/" rel="next" title="个人博客">
+                <i class="fa fa-chevron-left"></i> 个人博客
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>这是我的个人博客，以后自己的文章总结陆陆续续写在这上面。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -555,10 +452,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -566,6 +464,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -586,8 +488,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -643,6 +554,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#vue技术栈的基本使用"><span class="nav-number">1.</span> <span class="nav-text">vue技术栈的基本使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#新建项目"><span class="nav-number">1.1.</span> <span class="nav-text">新建项目</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vue-router"><span class="nav-number">2.</span> <span class="nav-text">vue-router</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#编程式导航"><span class="nav-number">2.1.</span> <span class="nav-text">编程式导航</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#路由嵌套（二级路由、三级路由）"><span class="nav-number">2.2.</span> <span class="nav-text">路由嵌套（二级路由、三级路由）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#路由守卫"><span class="nav-number">2.3.</span> <span class="nav-text">路由守卫</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#全局守卫"><span class="nav-number">2.3.1.</span> <span class="nav-text">全局守卫</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#路由独享守卫"><span class="nav-number">2.3.2.</span> <span class="nav-text">路由独享守卫</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#组件内路由守卫"><span class="nav-number">2.3.3.</span> <span class="nav-text">组件内路由守卫</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复用router-view"><span class="nav-number">2.4.</span> <span class="nav-text">复用router-view</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#axios"><span class="nav-number">3.</span> <span class="nav-text">axios</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#番外"><span class="nav-number">4.</span> <span class="nav-text">番外</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#vuex一览"><span class="nav-number">4.1.</span> <span class="nav-text">vuex一览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vuex"><span class="nav-number">4.2.</span> <span class="nav-text">vuex</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装和引入"><span class="nav-number">4.2.1.</span> <span class="nav-text">安装和引入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#state"><span class="nav-number">4.2.2.</span> <span class="nav-text">state</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#getters"><span class="nav-number">4.2.3.</span> <span class="nav-text">getters</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mutations"><span class="nav-number">4.2.4.</span> <span class="nav-text">mutations</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#actions"><span class="nav-number">4.2.5.</span> <span class="nav-text">actions</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mapState-mapGetters-mapMutations-mapActions"><span class="nav-number">4.2.6.</span> <span class="nav-text">mapState, mapGetters, mapMutations, mapActions</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#项目中使用vuex"><span class="nav-number">4.3.</span> <span class="nav-text">项目中使用vuex</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -769,6 +696,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
